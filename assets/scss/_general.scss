@@ -1,0 +1,36 @@
+/* Project baseline */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+/* Typography & forms */
+input,
+select,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Accessibility */
+:focus {
+  outline: 2px solid #007acc;
+  outline-offset: 2px;
+}

@@ -1,0 +1,10 @@
+# Node modules
+node_modules/
+
+# Build outputs
+assets/css/*.css
+assets/js/bundle*.js
+
+# OS files
+.DS_Store
+Thumbs.db
