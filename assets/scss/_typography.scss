@@ -1,9 +1,21 @@
 @use 'variables' as *;
 @use 'media' as *;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul li,
+a {
+  font-family: $font-primary;
+}
+
 h1 {
   color: $clr-light;
-  font-family: $font-primary;
+  // font-family: $font-primary;
   font-weight: 700;
   font-size: 46px; // default mobile
   line-height: 1.05; // line-height: 48px; / font-size: 46px; = 1.04347
@@ -21,4 +33,18 @@ h1 {
     line-height: 1.1; // line-height: 68px; / font-size: 62px; = 1.0967
     letter-spacing: 1.4px;
   }
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625; // line-height: 26px; / font-size: 16px; = 1.625
+  letter-spacing: 0.8px;
 }

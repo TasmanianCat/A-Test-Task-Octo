@@ -1,0 +1,120 @@
+@use 'variables' as *;
+@use 'media' as *;
+
+.main__content-articles-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  width: 100%;
+  padding: $padding-lg;
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(211, 216, 228, 1);
+}
+
+.main__content-articles-card-img-wrapper {
+  display: block;
+  height: 170px;
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.main__content-articles-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.main__content-articles-card-author-wrapper {
+  display: block;
+  padding-block: 20px 6px;
+}
+
+.main__content-articles-card-author {
+  color: $clr-blue-light;
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.55; // line-height: 20px; / font-size: 13px; = 1.5384
+  letter-spacing: 0.8px;
+}
+
+.main__content-articles-card-text {
+  margin-bottom: 30px;
+}
+
+.main__content-articles-card-heading {
+  color: $clr-dark;
+}
+
+.main__content-articles-card-paragraph {
+  margin-top: 16px;
+}
+
+/* CTA */
+.main__content-articles-card-cta-wrapper {
+  height: 40px;
+  min-width: 160px;
+  margin-top: auto;
+}
+
+.main__content-articles-card-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $clr-light;
+  height: 100%;
+  padding: 9px 35px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.55; //! ASK!!!!!!!!! line-height: 20px; / font-size: 13px; = 1.5384
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.main__content-articles-card-cta--bg-light {
+  background-color: $clr-blue-light;
+  border: 2px solid $clr-blue-light;
+}
+
+.main__content-articles-card-cta--bg-dark {
+  background-color: $clr-blue-dark;
+  border: 2px solid $clr-blue-dark;
+}
+
+/* Category */
+.main__content-articles-card-category-wrapper {
+  height: 36px;
+  min-width: 160px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+}
+
+.main__content-articles-card-category {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $clr-light;
+  height: 100%;
+  padding: 6px 16px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  line-height: 1.7; //! ASK!!!!!!!!! line-height: 22px; / font-size: 13px; = 1.6923
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.main__content-articles-card-category--bg-light {
+  background-color: $clr-blue-light;
+  border: 2px solid $clr-blue-light;
+}
+
+.main__content-articles-card-category--bg-dark {
+  background-color: $clr-blue-dark;
+  border: 2px solid $clr-blue-dark;
+}

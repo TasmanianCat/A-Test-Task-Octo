@@ -1,5 +1,19 @@
 /* Color */
 $clr-light: rgba(255, 255, 255, 1);
+$clr-dark: rgba(1, 1, 1, 1);
+$clr-blue-light: rgba(0, 182, 221, 1);
+$clr-blue-dark: rgba(8, 21, 128, 1);
 
-/* Fonts */
+/* Font */
 $font-primary: 'Noto Sans', sans-serif;
+
+/* Padding */
+$padding-block-lg: 100px;
+$padding-inline-lg: 30px;
+$padding-lg: 30px;
+
+/* Gap */
+$gap-lg: 30px;
+
+/* Max-width */
+$max-width: 1200px;

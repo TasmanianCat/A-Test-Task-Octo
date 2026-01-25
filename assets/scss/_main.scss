@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use 'media' as *;
+
+.main {
+  display: block;
+  width: 100%;
+
+  &__content {
+    display: block;
+    width: 100%;
+    max-width: $max-width;
+    padding-block: $padding-block-lg;
+    padding-inline: $padding-inline-lg;
+    margin-inline: auto;
+    // border: 1px solid red;
+  }
+
+  &__content-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: $gap-lg;
+  }
+}

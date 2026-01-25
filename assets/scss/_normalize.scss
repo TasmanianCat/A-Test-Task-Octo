@@ -37,9 +37,19 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul li {
   margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 400;
 }
 
 /* Grouping content
