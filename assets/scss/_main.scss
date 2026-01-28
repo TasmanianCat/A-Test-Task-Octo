@@ -9,15 +9,46 @@
     display: block;
     width: 100%;
     max-width: $max-width;
-    padding-block: $padding-block-lg;
-    padding-inline: $padding-inline-lg;
+    padding-block: $padding-block-xs;
+    padding-inline: $padding-inline-xs;
     margin-inline: auto;
-    // border: 1px solid red;
+
+    @include media-up(sm) {
+      padding-block: $padding-block-sm;
+      padding-inline: $padding-inline-sm;
+    }
+
+    @include media-up(md) {
+      padding-block: $padding-block-md;
+      padding-inline: $padding-inline-md;
+    }
+
+    @include media-up(lg) {
+      padding-block: $padding-block-lg;
+      padding-inline: $padding-inline-lg;
+    }
   }
 
+  /* See styles for cards in the '_cards.scss' file */
   &__content-articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     gap: $gap-lg;
+
+    @include media-up(ssm) {
+      grid-template-columns: repeat(auto-fill, minmax(258px, 1fr));
+    }
+
+    @include media-up(sm) {
+      grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
+    }
+
+    @include media-up(md) {
+      grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    }
+
+    @include media-up(lg) {
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    }
   }
 }
