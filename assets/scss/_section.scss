@@ -1,0 +1,212 @@
+@use 'variables' as *;
+@use 'media' as *;
+
+.section {
+  display: block;
+  width: 100%;
+
+  &--bg-dark {
+    background-color: $clr-dark;
+  }
+
+  &__content-solutions {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-lg;
+    align-items: center;
+    width: 100%;
+
+    padding-block: $padding-block-xs;
+    padding-inline: $padding-inline-xs;
+    margin-inline: auto;
+
+    @include media-up(ssm) {
+      padding-block: $padding-block-ssm;
+      padding-inline: 63px;
+    }
+
+    @include media-up(sm) {
+      padding-block: $padding-block-sm;
+      padding-inline: 86px;
+    }
+
+    @include media-up(md) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-block: $padding-block-md;
+      padding-inline: $padding-inline-lg;
+      //! padding-inline: 26px;
+    }
+
+    @include media-up(lg) {
+      max-width: $max-width;
+      padding-block: $padding-block-lg;
+      gap: 64px;
+    }
+  }
+
+  &__content-solutions-text-wrapper {
+    width: 100%;
+  }
+
+  &__content-solutions-heading {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $clr-blue-light;
+
+    @include media-up(md) {
+      text-align: left;
+      font-size: 54px;
+      line-height: 60px;
+      letter-spacing: 1.2px;
+    }
+
+    @include media-up(lg) {
+      font-size: 62px;
+      line-height: 68px;
+      letter-spacing: 1.4px;
+    }
+  }
+
+  &__content-solutions-paragraph {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: $clr-light;
+    margin-top: 14px;
+
+    @include media-up(md) {
+      text-align: left;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 1.2px;
+      margin-top: 22px;
+    }
+
+    @include media-up(lg) {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+
+  &__content-solutions-cta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap-xs;
+    width: 100%;
+    margin-top: 30px;
+
+    @include media-up(ssm) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    @include media-up(md) {
+      justify-content: flex-start;
+      margin-top: 40px;
+    }
+  }
+
+  &__content-solutions-cta-wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+
+    @include media-up(ssm) {
+      min-width: 140px;
+      width: auto;
+    }
+
+    @include media-up(md) {
+      height: 40px;
+      min-width: 150px;
+    }
+
+    @include media-up(lg) {
+      min-width: 160px;
+    }
+  }
+
+  &__content-solutions-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $clr-light;
+    height: 100%;
+    width: 100%;
+    padding: 8px 26px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px; // line-height: 20px; / font-size: 13px; = 1.5384
+    letter-spacing: 0.8px;
+    text-align: center;
+    opacity: 1;
+
+    @include media-up(md) {
+      padding: 9px 28px;
+      font-size: 13px;
+      line-height: 20px;
+    }
+
+    @include media-up(lg) {
+      padding: 9px 33px;
+      transition:
+        filter 0.25s ease-in-out,
+        opacity 0.25s ease-in-out;
+
+      &:hover {
+        opacity: 0.92;
+        filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.15));
+      }
+    }
+  }
+
+  &__content-solutions-cta--bg-light {
+    background-color: $clr-blue-light;
+    border: 2px solid $clr-blue-light;
+  }
+
+  &__content-solutions-cta--outlined-light {
+    border: 2px solid $clr-blue-light;
+  }
+
+  &__content-solutions-img-wrapper {
+    display: block;
+    height: 146px;
+    width: 100%;
+    background-image: url('./../images/section/solutions/solutions-ssm.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    margin-block: 15px;
+
+    @include media-up(ssm) {
+      height: 275px;
+    }
+
+    @include media-up(sm) {
+      height: 364px;
+    }
+
+    @include media-up(md) {
+      background-image: url('./../images/section/solutions/solutions-md.jpg');
+      min-height: 332px;
+      height: auto;
+      margin-block: 0;
+    }
+
+    @include media-up(lg) {
+      background-image: url('./../images/section/solutions/solutions-lg.jpg');
+      height: 380px;
+      width: 458px;
+      flex-shrink: 0;
+    }
+  }
+}
