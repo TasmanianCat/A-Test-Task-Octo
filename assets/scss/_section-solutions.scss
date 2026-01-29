@@ -9,7 +9,7 @@
     background-color: $clr-dark;
   }
 
-  &__content-solutions {
+  &__solutions {
     display: flex;
     flex-direction: column;
     gap: $gap-lg;
@@ -35,7 +35,6 @@
       justify-content: space-between;
       padding-block: $padding-block-md;
       padding-inline: $padding-inline-lg;
-      //! padding-inline: 26px;
     }
 
     @include media-up(lg) {
@@ -45,11 +44,11 @@
     }
   }
 
-  &__content-solutions-text-wrapper {
+  &__solutions-text-wrapper {
     width: 100%;
   }
 
-  &__content-solutions-heading {
+  &__solutions-heading {
     font-weight: 700;
     font-size: 46px;
     line-height: 48px;
@@ -71,7 +70,7 @@
     }
   }
 
-  &__content-solutions-paragraph {
+  &__solutions-paragraph {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 1px;
@@ -93,7 +92,7 @@
     }
   }
 
-  &__content-solutions-cta-container {
+  &__solutions-cta-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -113,7 +112,7 @@
     }
   }
 
-  &__content-solutions-cta-wrapper {
+  &__solutions-cta-wrapper {
     display: inline-block;
     width: 100%;
     height: 36px;
@@ -133,7 +132,7 @@
     }
   }
 
-  &__content-solutions-cta {
+  &__solutions-cta {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -167,16 +166,16 @@
     }
   }
 
-  &__content-solutions-cta--bg-light {
+  &__solutions-cta--bg-light {
     background-color: $clr-blue-light;
     border: 2px solid $clr-blue-light;
   }
 
-  &__content-solutions-cta--outlined-light {
+  &__solutions-cta--outlined-light {
     border: 2px solid $clr-blue-light;
   }
 
-  &__content-solutions-img-wrapper {
+  &__solutions-img-wrapper {
     display: block;
     height: 146px;
     width: 100%;
